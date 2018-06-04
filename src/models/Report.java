@@ -36,7 +36,7 @@ public class Report {
 
     @ManyToOne
     @JoinColumn(name = "employee_id", nullable = false)
-    private Employee employee;//Javaはオブジェクト指向言語であるため、日報と従業員を紐づけるということは、Javaでは日報オブジェクトと従業員オブジェクトを紐づける、という考え方になります。
+    private Employee employee;//Javaはオブジェクト指向言語であるため、日報と従業員を紐づけるということは、Javaでは日報オブジェクトと従業員オブジェクトを紐づける、という考え方になる。
 
     @Column(name = "report_date", nullable = false)//「いつの仕事の日報か」を表すフィールド
     private Date report_date;//Date型は年月日のみを管理する
