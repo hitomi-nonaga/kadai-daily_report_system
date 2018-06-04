@@ -42,7 +42,7 @@ public class LoginFilter implements Filter {
         String context_path = ((HttpServletRequest)request).getContextPath();
         String servlet_path = ((HttpServletRequest)request).getServletPath();
 
-        if(!servlet_path.matches("/css.*")) {//cssはログインしているかのチェックをしないようにする
+        if(!servlet_path.matches("/css.*")) {//cssはログインしているかのチェックをしない
             HttpSession session = ((HttpServletRequest)request).getSession();
             Employee e = (Employee)session.getAttribute("login_employee");
 
